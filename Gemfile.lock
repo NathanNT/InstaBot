@@ -1,6 +1,14 @@
 GEM
   specs:
+    bcrypt (3.1.13)
     childprocess (3.0.0)
+    colorize (0.8.1)
+    concurrent-ruby (1.1.5)
+    dotenv (2.7.5)
+    faker (2.8.0)
+      i18n (>= 1.6, < 1.8)
+    i18n (1.7.0)
+      concurrent-ruby (~> 1.0)
     mini_portile2 (2.4.0)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
@@ -17,6 +25,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt
+  colorize (~> 0.8.1)
+  dotenv
+  faker
   nokogiri
   selenium-webdriver
   watir

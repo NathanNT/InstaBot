@@ -5,7 +5,6 @@ def init
   puts "sucessfully go to #{s.title}"
   s.window.maximize
   if s.html.include?("Inscrivez-vous pour voir les photos et vidéos de vos amis.")
-  	connect_to_account
   end
 sleep(10)
 end
@@ -13,3 +12,5 @@ end
 
 
 init
+
+puts ENV['INSTA_LOGIN']
