@@ -12,7 +12,10 @@ def perform
 	targets = recup_session_and_targets[0]
 	targets.each do |target|
 		follow_target(target, session)
+		sleep(sample_a_number(900, 800))
 	end
+	sleep(sample_a_number(10000, 2000))
+	retry
 end
 
 perform
